@@ -1,4 +1,6 @@
+import { Avatar, List, ListItem, ListItemAvatar, ListItemText } from '@mui/material';
 import Image from 'next/image'
+import { VscArrowCircleRight } from 'react-icons/vsc'
 import React from 'react'
 
 const data = [
@@ -24,25 +26,20 @@ const data = [
 
 function Trainings() {
     return (
-        <div className='flex flex-row items-center'>
+        <div className='relative flex flex-row items-center w-full px-8 my-24'>
             <div className="traningPic">
                 <Image src="/training.jpg" width={700} height={500} />
             </div>
-            <div className="traningPic">
-                <h1 className='text-2xl font-bold'>Trainings</h1>
-                <List
-                    itemLayout="horizontal"
-                    dataSource={data}
-                    renderItem={(item, index) => (
-                        <List.Item>
-                            <List.Item.Meta
-                                avatar={<Avatar src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`} />}
-                                title={<a href="https://ant.design">{item.title}</a>}
-                                description="Ant Design, a design language for background applications, is refined by Ant UED Team"
-                            />
-                        </List.Item>
-                    )}
-                />
+            <div className="traningPic relative w-1/2 -left-30 p-3">
+            <h1 className='text-4xl font-bold mb-8 flex flex-row gap-5'> <VscArrowCircleRight/> Trainings</h1>
+                <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+                    {data.map((item, index)=>(
+                        <ListItem key={index}>
+                            <ListItemText primary={item.title} secondary={item.trainer} />
+                        </ListItem>
+                    ))}
+                    
+                </List>
             </div>
         </div>
     )

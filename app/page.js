@@ -5,6 +5,7 @@ import What_i_do from '../components/Work/What_i_do'
 import Skills from '@/components/Skills/Skills'
 import SciSkill from '@/components/Skills/SciSkill'
 import Trainings from '@/components/Trainings/Trainings'
+import Projects from '@/components/Projects/Projects'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <Skills/>
       <SciSkill/>
       <Trainings/>
+      <Projects/>
     </div>
   )
 }
