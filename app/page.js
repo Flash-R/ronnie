@@ -6,17 +6,21 @@ import Skills from '@/components/Skills/Skills'
 import SciSkill from '@/components/Skills/SciSkill'
 import Trainings from '@/components/Trainings/Trainings'
 import Projects from '@/components/Projects/Projects'
+import Clients from '@/components/Clients/Clients'
+import Footer from '@/components/Navigation/Footer'
 
 function Home() {
   return (
     <div>
       <NavMenu/>
       <Hero/>
+      <Clients/>
       <What_i_do/>
       <Skills/>
       <SciSkill/>
       <Trainings/>
       <Projects/>
+      <Footer/>
     </div>
   )
 }
