@@ -8,6 +8,7 @@ import Trainings from '@/components/Trainings/Trainings'
 import Projects from '@/components/Projects/Projects'
 import Clients from '@/components/Clients/Clients'
 import Footer from '@/components/Navigation/Footer'
+import Testimonial from '@/components/Testomonials/Testmonial'
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <SciSkill/>
       <Trainings/>
       <Projects/>
+      <Testimonial/>
       <Footer/>
     </div>
   )

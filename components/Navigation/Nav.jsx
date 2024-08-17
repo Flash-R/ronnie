@@ -33,7 +33,7 @@ function NavMenu() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/docs" legacyBehavior passHref>
+            <Link href="/Skills" legacyBehavior passHref>
               <NavigationMenuLink className='nav_link'>
                 Skills
               </NavigationMenuLink>

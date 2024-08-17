@@ -6,7 +6,7 @@ function Footer() {
     const date = new Date();
     const Year = date.getFullYear();
   return (
-    <div className='flex flex-row justify-between w-[940px] my-5 px-8 py-5 bg-black '>
+    <div className='flex flex-row justify-between px-8 py-10 bg-black '>
         <div className="copyright">
             <hr />
             <h4 className="font-bold text-white">All Right reserved  &copy;  Tumwesigye Ronnie | {Year}</h4>
